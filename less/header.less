@@ -1,0 +1,58 @@
+// header styles 
+
+#header { 
+	height: auto;
+	background: @secondary-color;
+	
+	// page titles
+	h1 { 
+		color:@tertiary-color;
+		margin-bottom: 0px;
+
+   		@media (max-width: 768px) { 
+			font-size: 24px;
+
+   		}
+	}
+
+	h2 { 
+		font-size: 22px;
+		margin-top: 0px;
+
+   		@media (max-width: 768px) { 
+   			font-size: 18px;
+   		}
+
+	}
+
+	// contact details
+	.contact {
+		list-style: none;
+		margin: 25px 0px; 
+
+		@media (max-width: 768px) { 
+   			margin: 0px;
+   			padding:0px 5px;
+   			float: left;
+
+   		}
+
+		li {
+			display: inline-block;
+			float: right;
+
+			@media (max-width: 768px) { 
+				font-size: 14px;
+				padding: 5px;
+			}
+
+			a {
+				color: @tertiary-color; 
+
+			}
+
+		}
+
+	}
+
+}
